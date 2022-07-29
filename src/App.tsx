@@ -1,7 +1,9 @@
 import './App.css';
 
 import React, { useState } from 'react';
+import tw, { GlobalStyles as BaseStyles, theme } from 'twin.macro';
 
+import GlobalStyles from './GlobalStyles';
 import logo from './logo.svg';
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
 
   return (
     <div className="App">
+      <GlobalStyles />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="header">
