@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className="App">
-      <GlobalStyles />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="header">
@@ -23,7 +22,6 @@ function App() {
           <button onClick={() => setCount((count) => count + 1)}>
             🪂 Click me : {count}
           </button>
-
           <p> Don&apos;t forgot to install Eslint and Prettier in Your Vscode.</p>
 
           <p>
