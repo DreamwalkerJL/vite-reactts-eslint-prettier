@@ -1,6 +1,8 @@
 import './App.css';
+
 import { useState } from 'react';
 import tw, { GlobalStyles as BaseStyles, theme } from 'twin.macro';
+
 import GlobalStyles from './GlobalStyles';
 import logo from './logo.svg';
 
@@ -47,10 +49,14 @@ function App() {
             </a>
           </p>
         </div>
-        <button name='lol' placeholder='was' disabled>lol</button>
-        <button name='was' disabled>lol</button>
+        <button name="lol" placeholder="was" disabled>
+          lol
+        </button>
+        <button name="was" disabled>
+          lol
+        </button>
         <form action="">
-          <input placeholder='wwwwwwwww' type="text" />
+          <input placeholder="wwwwwwwww" type="text" />
         </form>
       </header>
     </div>
