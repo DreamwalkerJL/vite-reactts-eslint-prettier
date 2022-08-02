@@ -1,13 +1,15 @@
 import './App.css';
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 import tw, { GlobalStyles as BaseStyles, theme } from 'twin.macro';
-
 import GlobalStyles from './GlobalStyles';
 import logo from './logo.svg';
 
 function App() {
   const [count, setCount] = useState(0);
+
+  function countAdd() {
+    setCount((count) => count + 1);
+  }
 
   return (
     <div className="App">
@@ -19,9 +21,7 @@ function App() {
         </p>
 
         <div className="body">
-          <button onClick={() => setCount((count) => count + 1)}>
-            🪂 Click me : {count}
-          </button>
+          <button onClick={countAdd}>🪂 Click me : {count}</button>
           <p> Don&apos;t forgot to install Eslint and Prettier in Your Vscode.</p>
 
           <p>
@@ -47,6 +47,11 @@ function App() {
             </a>
           </p>
         </div>
+        <button name='lol' placeholder='was' disabled>lol</button>
+        <button name='was' disabled>lol</button>
+        <form action="">
+          <input placeholder='wwwwwwwww' type="text" />
+        </form>
       </header>
     </div>
   );
